@@ -1,0 +1,49 @@
+.home {
+  & > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    background: #eee5;
+    & img {
+      max-width: 100%;
+      width: 400px;
+      z-index: -1;
+    }
+    & div {
+      max-width: 420px;
+      display: inline;
+      position: absolute;
+      right: 0;
+      text-align: center;
+
+      & span {
+        font-size: 40px;
+        font-weight: bold;
+        display: block;
+        padding: 10px;
+        text-align: right;
+      }
+
+      & a {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: normal;
+        background: black;
+        color: white;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          filter: invert(1);
+          box-shadow: 0 0 1px 1px white;
+        }
+      }
+    }
+  }
+}
